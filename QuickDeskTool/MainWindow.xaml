@@ -1,0 +1,27 @@
+﻿<Window x:Class="QuickDeskTool.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:QuickDeskTool"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800"
+        Closing="Window_Closing">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition />
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition />
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Button Click="Button_Click" Width="100" Height="70">Show</Button>
+        <Button Grid.Column="1" Click="screenshot_Click" Width="100" Height="70">Screenshot</Button>
+        <Button Grid.Row="1" Click="image_Click" Width="100" Height="70">Show Image</Button>
+        <Image x:Name="img" Margin="5" Grid.Row="2" Grid.ColumnSpan="2" >
+            
+        </Image>
+    </Grid>
+</Window>
